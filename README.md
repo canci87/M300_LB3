@@ -4,9 +4,10 @@ Dokumentation
 ### Übersicht
 ***
 
-* 01 - [Ziel](#01---ziel)
-* 02 - [Sicherheit](#02---Sicherheit)
-* 03 - [Client Konfigurieren](#03---Client-Konfigurieren)
+* 01 - [K1](#01---K1)
+* 02 - [K2](#02---K2)
+* 02.01 [Persönlicher Wissenstand](#02.01---Persönlicher Wissenstand)
+* 03 - [K3](#03---K3)
 * 04 - [Vagrant Befehle](#04---Vagrant-Befehle)
 * 05 - [Vagrant Boxen](#05---Vagrant-Boxen)
 * 06 - [Firewall Konfig](#06---firewall-konfig)
@@ -14,42 +15,36 @@ Dokumentation
 * 08 - [Testfälle](#08---Testfälle)
 
 
-### 01 - Ziel
+### 01 - K1
 ***
 
 
-Ich habe mir für dieses Projekt vorgenommen, einen Apache Webserver zu erstellen, welcher über Port 8080 erreichbar sein soll. Zudem soll ein Volume eingerichtet werden, so dass ich die Daten lokal erstellen und speichern kann und diese dann direkt auch im Container gespeichert sind. Natürlich muss auch die Sicherheit gewährleistet sein, die Infos dazu sind im Kapitel Sicherheit zu finden.
+Die nötige Software, den Git-Hub Account (gitaccoutn) und den SSH-Key wurde alles bereits für LB2 installiert/erstellt.
 
 
-### 02 - Sicherheit
+### 02 - K2
 ***
 
-
-Um die Sicherheit der Container und des Systems zu gewährleisten, muss man noch ein paar Schritte vornehmen. 
-
-**User setzen** <br>
-Damit man im Container selbst nicht mit dem Root account arbeiten muss, sollte man bei der Erstellung eines Containers immer einen weiteren Benutzer mit weniger Rechten erstellen. 
-
-```Shell
-    $ RUN groupadd -r user_grp && useradd -r -g user_grp user
-    $ USER user
-```
-Mit der USER Anweisung wechselt man zum gewünschtem User.
-
-**Ports** <br>
-Ein Container sollte immer nur die Ports geöffnet haben, die auch wirklich benötigt werden. Die geöffneten Ports sollten zudem auch nur für andere Container erreichbar sein.
-
-**LOGs** <br>
-Falls man keine Argumente definiert oder Zusatz Software verwendet, protokolliert Docker alles was an STDOUT und STDERR gesendet wird.
-
-Die Logs können dann über den Befehl `docker logs` abgerufen werden.
-
-**Monitoring**<br>
-Damit man bescheid weiss wie es um die Ressourcen steht und ob etwas knapp ist, wird noch eine Monitoring Software benötigt.
-Dafür verwende ich cAdvisor. Praktisch an dieser Software ist, dass sie auch als Container verwendet werden kann.
-
-### 03 - Client konfigurieren
+## 02.01 - Persönlicher Wissenstand
 ***
+
+Docker kannte ich vor diesem Modul nur ganz wenig. Mein ehemaliger Oberstift hat mir Docker zwar mal kurz erklärt, jedoch habe ich mich nie weiter darin vertieft oder arbeiten damit erledigt. Ich weiss das Container immer mehr und mehr verwendet werden, und bei alltägliche diensten wie z.B. Gmail vorkommen.
+Um mein Wissenstand ein wenig aufzurüsten, habe ich vor allem zusätzlich zum Unterricht noch Youtube Videos angeschaut, welche die Grundlagen erklären.
+
+
+
+### 03 - K3
+***
+
+## 03.01 - Geplante Umgebung
+**
+
+Für die LB3 habe ich mir vorgenommen, nichts allzu Kompliziertes zu erstellen, da ich aus meiner Sicht zu wenig Erfahrung und Wissen in diesem Bereich habe, um ein kompliziertes Projekt in dieser Zeit zu realisieren.
+Das Ziel war es, als Backend eine MySQL Datenbank zu erstellen, welche dann über das Frontend, Webserver, verwaltet werden kann. Um das ganze einfacher zu testen wird ein persistentes Volume erstellt. Diverse Sicherheitsmassnahmen und ein Monitoring wird auch noch umgesetzt.
+
+## 03.02 - Testing
+**
+
 
 
 1. Git-Bash öffnen
