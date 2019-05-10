@@ -40,6 +40,31 @@ Um mein Wissenstand ein wenig aufzurüsten, habe ich vor allem zusätzlich zum U
 Für die LB3 habe ich mir vorgenommen, nichts allzu Kompliziertes zu erstellen, da ich aus meiner Sicht zu wenig Erfahrung und Wissen in diesem Bereich habe, um ein kompliziertes Projekt in dieser Zeit zu realisieren.
 Das Ziel war es, als Backend eine MySQL Datenbank zu erstellen, welche dann über das Frontend, Webserver, verwaltet werden kann. Um das ganze einfacher zu testen wird ein persistentes Volume erstellt. Diverse Sicherheitsmassnahmen und ein Monitoring wird auch noch umgesetzt.
 
+### Docker Commands
+
+| Befehl           |Beschreibung                                                                                   |
+| -----------------|:---------------------------------------------------------------------------------------------:|
+| Docker run       |Startet neuen Container - Der Befehl bietet unzählige Optionen und Parameter für Konfiguration |
+| Docker run -it ubuntu /bin/bash       |Startet einen Container mit einer interaktiven Shell                      |
+| Docker run -d ubuntu touch /tmp/lok      |Startet einen Container im Hintergrund und legt eine Datei an          |                     
+| Docker ps        |Gibt einen Überblick über alle aktuellen Container                                             | 
+| Docker ps -a     |Aktive und gestoppte Container anzeigen (All)                                                  | 
+| Docker container ls -q |Gibt die ID aller laufenden Container an.                                                |
+| Docker images    |Gibt Liste von lokalen Images aus (Repository-Name, Tag-Name, und Grösse)                      | 
+| Docker rm        |Löscht einen oder mehrere Container. Gibt ID's aller Erfolgreich gelöschten Container zurück   | 
+| Docker rmi       |Löscht das angegebene Image. Diese werden durcgh ID oder Tag-Name spezifiziert.                |
+| Docker start     |Startet einen oder mehrere Container, welche gestoppt wurden (Nur starten nicht erstellen).    |
+| Docker stop      |Stoppt einen oder mehrere Container(Herunterfahren).                                           |
+| Docker kill      |Der Container wird sofort gestoppt und anschliessend gelöscht.                                 |
+| Docker logs      |Gibt die Logs für einen Container aus.                                                         |
+| Docker inspect   |Gibt umfangreiche Info über Container und Image(Konfigurationen, Netzwerkeinstellungen etc.)   |
+| Dokcer diff      |Gibt Änderungen am Dateisystem an, gegenüber dem Image welches verwendet wurde.                |
+| Docker top       |Gibt die aktuell laufenden Prozesse an(Task Manager).                                          |
+| Docker build -t "name" |Erstellt Image aus dem Dockerfile im Verzeichniss                                        |
+| Docker login     |Mit Docker Credentials in dieser CLI Situng anmelden                                           |
+| Docker stack ls  |Zeigts Stacks oder Apps an.                                                                    |
+| Docker stack rm "appname" |Entfernt eine App.                                                                    |
+
 ### Testing
 
 | Was wird getestet     | Erwartetes Reslutat   | Resultat  |
