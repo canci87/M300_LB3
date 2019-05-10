@@ -102,7 +102,13 @@ Dafür verwende ich cAdvisor. Praktisch an dieser Software ist, dass sie auch al
 ### 05 - K5
 ***
 
+### Wissenszuwachs
 
+Ich konnte im Verlauf dieser Arbeit sehr viel neues lernen, vorallem das Prinzip um Docker herum. Einfache Container sind für mich kein Problem und somit kann ich auch eine kleine und einfache Container Infra aufbauen. Auch in der LB2 habe ich sehr viel gelernt, vorallem weil ich Docker sowie auch Vagrant noch nie benutzt habe und auch nur sehr wenig davon gehört habe.
+
+### Reflexion
+
+Anfangs fiel es mir recht schwer, mich mit Docker und auch Github zurecht zu finden. Dies hat meine anfangs Motivation ein wenig in den Keller geschossen, da es ohne Erfolge auch keinen Spass macht. Als ich mir dann jedoch hilfe in der Klasse und auch im Geschäft holte und so die ersten Erfolge verzeichnen konnte, wurde die Motivation immer grösser. Was ich ein wenig müsahm fand, ist das Dokumentieren mit dem mark Down editor. Mit der Zeit ging das jedoch auch immer besser. Im grossen und ganze fand ich das Modul sher interessant und auch die Unterlagen sowie der Unterricht spannend.
 
 
 
