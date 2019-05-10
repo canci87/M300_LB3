@@ -6,7 +6,6 @@ Dokumentation
 
 * 01 - [K1](#01---K1)
 * 02 - [K2](#02---K2)
-* 02.01 [Persönlicher Wissenstand](#0201---Persönlicher Wissenstand)
 * 03 - [K3](#03---K3)
 * 04 - [Vagrant Befehle](#04---Vagrant-Befehle)
 * 05 - [Vagrant Boxen](#05---Vagrant-Boxen)
@@ -36,8 +35,7 @@ Um mein Wissenstand ein wenig aufzurüsten, habe ich vor allem zusätzlich zum U
 ### 03 - K3
 ***
 
-## 03.01 - Geplante Umgebung
-**
+## Geplante Umgebung
 
 Für die LB3 habe ich mir vorgenommen, nichts allzu Kompliziertes zu erstellen, da ich aus meiner Sicht zu wenig Erfahrung und Wissen in diesem Bereich habe, um ein kompliziertes Projekt in dieser Zeit zu realisieren.
 Das Ziel war es, als Backend eine MySQL Datenbank zu erstellen, welche dann über das Frontend, Webserver, verwaltet werden kann. Um das ganze einfacher zu testen wird ein persistentes Volume erstellt. Diverse Sicherheitsmassnahmen und ein Monitoring wird auch noch umgesetzt.
